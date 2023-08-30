@@ -4,6 +4,8 @@ description: "A responsive Jekyll theme for dental clinics."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
 logo_url: svg/min/logo.svg
+baseurl: /website.org
+destination: ./_site/website.org
 
 # Hero
 hero: 
