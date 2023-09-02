@@ -1,22 +1,20 @@
-{% include doctype-head.html %}
-<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    {% include svg-defs.svg %}
-    <!--[if lt IE 10]>
-        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
-    <![endif]-->
+<!DOCTYPE html>
+<html lang="es">
 
-    {% include header.html %}
- 
-        {{ content }}
-           
-    {% include footer.html %}
-    
-    {% if site.analytics %}
-        {% include analytics.html %}
-    {% endif %}
+  <head>
+    {% seo %}
+    {% include components/meta/dentalsmile.liquid %}
+    {% include components/fonts/google.html %}
+    {% include components/stylesheets/dentalsmile.liquid %}
+    {% include components/analytics/google-analytics.liquid %}
+  </head>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="{{ site.baseurl }}/js/all.min.js"></script>
-</body>
+  <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    {% include components/icons/dentalsmile.svg %}
+    {% include components/navbars/bootstrap.liquid %}
+    {{ content }}
+    {% include components/footers/dentistsmile.liquid %}
+    {% include components/scripts/body.liquid %}
+  </body>
+
 </html>

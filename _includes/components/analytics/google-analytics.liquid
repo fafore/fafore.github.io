@@ -1,0 +1,9 @@
+{% if site.analytics %}
+  <script>
+    {% include components/analytics/google-analytics.js %}
+  </script>
+{% endif %}
+
+{% if site.google-verification %}
+  <meta name="google-site-verification" content="{{ site.google-verification }}">
+{% endif %}
