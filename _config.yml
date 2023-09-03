@@ -8,6 +8,7 @@ baseurl: /website.org
 destination: ./_site/website.org
 
 components:
+  navbar: [Home, About, Treatments, Team, Testimonials, Gallery, Location]
   social-media:
     - { name: facebook, url: //facebook.com }
     - { name: twitter, url: //twitter.com }
