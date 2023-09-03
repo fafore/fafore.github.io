@@ -7,6 +7,15 @@ logo_url: svg/min/logo.svg
 baseurl: /website.org
 destination: ./_site/website.org
 
+components:
+  social-media:
+    - { name: facebook, url: //facebook.com }
+    - { name: twitter, url: //twitter.com }
+    - { name: instagram, url: //instagram.com }
+    - { name: youtube, url: //youtube.com }
+    - { name: skype, url: //skype.com }
+    - { name: feed, url: '#' }
+
 # Hero
 hero: 
     hero_img: hero.jpg
@@ -37,14 +46,6 @@ map:
     zoom: 17
     address: Von schroeders 273, Viña del mar, Chile
     address_details: svg/min/logo.svg
-
-# Social settings
-facebook: http://facebook.com
-twitter: http://twitter.com
-instagram: http://instagram.com
-youtube: http://youtube.com
-skype: skype:obaez_design?userinfo
-feed: yes
 
 # Footer
 copyright: © 2015 DentistSmile - All rights reserved
