@@ -8,6 +8,8 @@ baseurl: /website.org
 destination: ./_site/website.org
 
 components:
+  form: # Contact form
+    api-token: # getsimpleform.com API token
   navbar: [Home, About, Treatments, Team, Testimonials, Gallery, Location]
   social-media:
     - { name: facebook, url: //facebook.com }
@@ -16,15 +18,6 @@ components:
     - { name: youtube, url: //youtube.com }
     - { name: skype, url: //skype.com }
     - { name: feed, url: '#' }
-
-# Hero
-hero: 
-    hero_img: hero.jpg
-    hero_title: DentistSmile
-    hero_description: A responsive Jekyll theme for dental clinics.
-
-# Contact form
-api_token: # Enter API token here
 
 # Contact info
 contact:
