@@ -1,0 +1,6 @@
+<div class="col-sm-4">
+  {% include components/icons/icon.liquid icon="icon-o" %}
+  <h3>Title</h3>
+
+  {% include {{ include.component | prepend: "components/info-cards/" | append: ".liquid" }} %}
+</div>

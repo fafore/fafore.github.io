@@ -1,0 +1,21 @@
+<div class="col-sm-4">
+  {% include components/icons/icon.liquid icon="clock-o" %}
+  <h3>Opening Hours</h3>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>Monday – Friday</td>
+        <td>{{ page.components.info-cards.working-hours.monday_friday }}</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>{{ page.components.info-cards.working-hours.saturday }}</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>{{ page.components.info-cards.working-hours.sunday }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
