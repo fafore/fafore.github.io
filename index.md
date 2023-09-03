@@ -104,7 +104,7 @@ components:
     {% for member in site.data.team %}
         <div class="expandable-box">
             <div class="expandable-box-top">
-                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
+                <img src="{{ member.name | slugify | prepend: '/assets/components/carousels/' | append: '.jpg' | relative_url }}" alt="{{ member.name }}">
                 <h4>{{ member.name }}</h4>
             </div>
             <div class="expandable-box-bottom">
