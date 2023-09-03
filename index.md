@@ -39,7 +39,7 @@ components:
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                            {% include components/icons/icon.liquid icon="heart" %}
                         </div>
                     </div>
                     <div class="media-body">
@@ -50,7 +50,7 @@ components:
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                            {% include components/icons/icon.liquid icon="medkit" %}
                         </div>
                     </div>
                     <div class="media-body">
@@ -61,7 +61,7 @@ components:
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                            {% include components/icons/icon.liquid icon="star" %}
                         </div>
                     </div>
                     <div class="media-body">
@@ -86,7 +86,7 @@ components:
             {% for treatment in site.data.treatments %}
                 <div class="col-sm-6 col-md-4">
                     <div class="icon-box">
-                        <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
+                        {% include components/icons/icon.liquid icon=treatment.icon %}
                         <h4>{{ treatment.title }}</h4>
                         <p>{{ treatment.description }}</p>
                     </div>
@@ -108,8 +108,12 @@ components:
                 <h4>{{ member.name }}</h4>
             </div>
             <div class="expandable-box-bottom">
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></span>
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></span>
+                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}">
+                    {% include components/icons/icon.liquid icon="envelope" %}
+                </span>
+                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}">
+                    {% include components/icons/icon.liquid icon="phone" %}
+                </span>
             </div>
         </div>
     {% endfor %}
@@ -125,7 +129,7 @@ components:
             <div id="testimonial-carousel">
                 {% for testimonial in site.data.testimonials %}
                     <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
+                        {% include components/icons/icon.liquid icon="quote-left" %}
                         <blockquote>
                             <p>{{ testimonial.description }}</p>
                             <footer>
@@ -152,7 +156,9 @@ components:
                 <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
             </div>
             <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
+                <span>
+                    {% include components/icons/icon.liquid icon="chain" %}
+                </span>
             </div>
         </a>
     {% endfor %}

@@ -2,9 +2,7 @@
   {% for social-media in site.components.social-media %}
     <li>
       <a href="{{ social-media.url }}">
-        <svg class="icon icon-{{ social-media.name }}">
-          <use xlink:href="#icon-{{ social-media.name }}"></use>
-        </svg>
+        {% include components/icons/icon.liquid icon=social-media.name %}
       </a>
     </li>
   {% endfor %}
