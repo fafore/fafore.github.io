@@ -14,6 +14,15 @@ components:
     location:
       street: Von schroeders 273
       city: Viña del mar - Chile
+  panels:
+    media-object:
+      title: About Us
+      subtitle: Welcome to DentistSmile
+      body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!
+      media-objects:
+        - {icon: heart, body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi."}
+        - {icon: medkit, body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi."}
+        - {icon: star, body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi."}
 ---
 {% include components/hero/bootstrap.liquid 
    title="DentistSmile"
@@ -26,56 +35,11 @@ components:
   {% include components/info-cards/location.liquid %}
 </div>
 
-<!-- Start About -->
 <div id="about" class="about">
-    <div class="container-fluid">
-        <h2 class="section-title">About Us</h2>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Welcome to DentistSmile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            {% include components/icons/icon.liquid icon="heart" %}
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            {% include components/icons/icon.liquid icon="medkit" %}
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            {% include components/icons/icon.liquid icon="star" %}
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img src="img/about.jpg" alt="...">
-            </div>
-        </div>
-    </div>
+  <div class="container-fluid">
+    {% include components/panels/media-object.liquid %}
+  </div>
 </div>
-<!-- End About -->
 
 <!-- Start Treatments -->
 <div id="treatments" class="treatments">

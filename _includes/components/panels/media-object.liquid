@@ -1,0 +1,23 @@
+<h2 class="section-title">
+  {{ page.components.panels.media-object.title }}
+</h2>
+
+<div class="row">
+  <div class="col-sm-6">
+    <h3>{{ page.components.panels.media-object.subtitle }}</h3>
+    <p>{{ page.components.panels.media-object.body }}</p>
+
+    {% for media-object in page.components.panels.media-object.media-objects %}
+      {% include components/media-object/bootstrap.liquid 
+          icon=media-object.icon
+          body=media-object.body
+      %}
+    {% endfor %}
+  </div>
+
+  <div class="col-sm-6">
+    <img
+      src="{{ page.components.panels.media-object.title | slugify | prepend: '/assets/components/panels/' | append: '.jpg' | relative_url }}"
+      alt="{{ page.components.panels.media-object.title }}" />
+  </div>
+</div>
