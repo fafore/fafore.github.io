@@ -1,6 +1,6 @@
 # Site settings
-title: DentistSmile | Dental Jekyll Theme
-description: "A responsive Jekyll theme for dental clinics."
+title: FAFORE | Familia, Fortaleza y Reinserción A.C.
+description: "FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
 logo_url: svg/min/logo.svg
@@ -10,14 +10,10 @@ destination: ./_site/website.org
 components:
   form: # Contact form
     api-token: # getsimpleform.com API token
-  navbar: [Home, About, Treatments, Team, Testimonials, Gallery, Location]
+  navbar: [Inicio, Nosotros, Convenios, Equipo, Testimonios, Galeria, Contacto]
   social-media:
-    - { name: facebook, url: //facebook.com }
-    - { name: twitter, url: //twitter.com }
-    - { name: instagram, url: //instagram.com }
-    - { name: youtube, url: //youtube.com }
-    - { name: skype, url: //skype.com }
-    - { name: feed, url: '#' }
+    - { name: facebook, url: "//www.facebook.com/profile.php?id=100087547196288&mibextid=ZbWKwL" }
+    - { name: instagram, url: "//instagram.com/fafore_ac?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" }
 
 # Testimonials
 testimonials:
@@ -26,11 +22,11 @@ testimonials:
 # Map
 map:
     zoom: 17
-    address: Von schroeders 273, Viña del mar, Chile
+    address: Ave. Deza y Ulloa 2910-19 Col. San Felipe 1, Chihuahua, Mexico, 31203
     address_details: svg/min/logo.svg
 
 # Footer
-copyright: © 2015 DentistSmile - All rights reserved
+copyright: © 2023 FAFORE - Todos los derecho reservados
 
 # Build settings
 markdown: kramdown
