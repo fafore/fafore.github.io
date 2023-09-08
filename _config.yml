@@ -1,10 +1,8 @@
 # Site settings
 title: FAFORE | Familia, Fortaleza y Reinserción A.C.
 description: "FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: /website.org # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
-logo_url: svg/min/logo.svg
-baseurl: /website.org
 destination: ./_site/website.org
 
 components:
