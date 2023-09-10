@@ -7,12 +7,16 @@
     <h3>{{ page.components.panels.media-object.subtitle }}</h3>
     <p>{{ page.components.panels.media-object.body }}</p>
 
-    {% for media-object in page.components.panels.media-object.media-objects %}
-      {% include components/media-object/bootstrap.liquid 
-          icon=media-object.icon
-          body=media-object.body
-      %}
-    {% endfor %}
+    <div class="row">
+      {% for media-object in page.components.panels.media-object.media-objects %}
+        <div class="col-xs-6">
+          {% include components/media-object/bootstrap.liquid 
+              icon=media-object.icon
+              body=media-object.body
+          %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="col-sm-6">
