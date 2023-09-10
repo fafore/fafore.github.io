@@ -50,7 +50,7 @@ components:
             {% for treatment in site.data.treatments %}
                 <div class="col-sm-6 col-md-4">
                     <div class="icon-box">
-                        {% include components/icons/icon.liquid icon=treatment.icon %}
+                        {% include components/icons/icon.liquid icon=treatment.icon color="danger" %}
                         <h4>{{ treatment.title }}</h4>
                         <p>{{ treatment.description }}</p>
                     </div>
