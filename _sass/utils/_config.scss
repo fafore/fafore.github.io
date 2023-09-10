@@ -26,13 +26,19 @@ $alto: #ddd;
 $mercury: #e9e9e9;
 $alabaster: #f7f7f7;
 $pelorous: #3dadb2;
+$fuchsia: #e5087e;
+$blue: #428cdf;
 
 /* Color usage */
-$colorPrimary: $pelorous;
+$colorPrimary: $blue;
 $colorHeading: $grey;
 $colorBase: $greyLight;
 $colorBg: $alabaster;
 $colorBorder: $alto;
+
+/* Color states */
+
+$state-danger-text: $fuchsia;
 
 /* Spacing
 -------------------------------*/
@@ -79,7 +85,7 @@ $grid-float-breakpoint: $screen-md;
 /* Buttons
 -------------------------------*/
 $btn-default-color: $white;
-$btn-default-bg: $colorPrimary;
+$btn-default-bg: $fuchsia;
 $btn-default-border: $colorPrimary;
 
 // Allows for customizing button radius independently from global border radius
@@ -92,4 +98,3 @@ $btn-border-radius-small: 0;
 $tooltip-max-width: 260px;
 $tooltip-color: #fff;
 $tooltip-bg: darken($colorPrimary, 2%);
-
