@@ -7,12 +7,11 @@ components:
       phone: 614 289 8591
       email: faforeac@gmail.com
     working-hours:
-      monday_friday: 9:00 – 18:00
-      saturday: 10:00 – 17:00
-      sunday: 10:00 – 15:00
+      workdays: 9:00 – 18:00
+      weekends: 9:00 – 15:00
     location:
-      street: Ave. Deza y Ulloa 2910-19 Col. San Felipe 1
-      city: Chihuahua, Chih., México
+      street: "Ave. Deza y Ulloa #2910-19"
+      city: Col. San Felipe 1, Chih, Chih, México.
   panels:
     media-object:
       title: Nosotros
@@ -44,7 +43,7 @@ components:
 <!-- Start Treatments -->
 <div id="convenios" class="treatments">
     <div class="container-fluid">
-        <h2 class="section-title">Treatments</h2>
+        <h2 class="section-title">Convenios</h2>
 
         <div class="row">
             {% for treatment in site.data.treatments %}
@@ -62,8 +61,8 @@ components:
 <!-- End Treatments -->
 
 <!-- Start Our team -->
-<div id="equipo" class="team"> 
-    <h2 class="section-title">Our Team</h2> 
+<div id="patrocinadores" class="team"> 
+    <h2 class="section-title">Nuestros patrocinadores</h2> 
     <div id="team-carousel">
     {% for member in site.data.team %}
         <div class="expandable-box">
@@ -112,7 +111,7 @@ components:
 <!-- Start Gallery -->
 <div id="galeria" class="gallery">
         
-    <h2 class="section-title">Gallery</h2>
+    <h2 class="section-title">Galería</h2>
 
     {% for images in site.data.gallery %}
         <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
@@ -131,5 +130,5 @@ components:
 <!-- End Gallery -->
 
 <!-- Start Map -->
-<div id="contacto" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+<div id="localizanos" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
 <!-- End Map -->

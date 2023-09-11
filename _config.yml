@@ -7,7 +7,7 @@ url: "" # the name of your domain
 components:
   form: # Contact form
     api-token: # getsimpleform.com API token
-  navbar: [Inicio, Nosotros, Convenios, Equipo, Testimonios, Galeria, Contacto]
+  navbar: [Inicio, Nosotros, Convenios, Patrocinadores, Testimonios, Galeria, Localizanos]
   social-media:
     - { name: facebook, url: "//www.facebook.com/profile.php?id=100087547196288&mibextid=ZbWKwL" }
     - { name: instagram, url: "//instagram.com/fafore_ac?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" }
