@@ -25,7 +25,7 @@ components:
 ---
 {% include components/hero/bootstrap.liquid 
    title="FAFORE AC"
-   description="Asosiación civil de ayuda a niños, niñas y adolescentes, hij@s de mujeres privadas de la libertad."
+   description="Ayuda a los hij@s de mujeres privadas de la libertad"
 %}
 
 <div class="three-shade-col">
