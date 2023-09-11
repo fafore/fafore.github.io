@@ -34,3 +34,13 @@ img {
 .map {
     height: 450px;
 }
+
+/* Color helpers */
+
+.text-white {
+    color: #fff;
+
+    &:hover {
+        color: darken(#fff, 15%);
+    }
+}

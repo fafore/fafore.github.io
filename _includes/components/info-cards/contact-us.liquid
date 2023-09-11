@@ -6,7 +6,9 @@
     {% if page.components.info-cards.contact-us.phone %}
       <li>
         <strong>Teléfono:</strong>
-        {{ page.components.info-cards.contact-us.phone }}
+        <a class="btn-link text-white" href="tel:{{ page.components.info-cards.contact-us.phone }}">
+          {{ page.components.info-cards.contact-us.phone }}
+        </a>
       </li>
     {% endif %}
 
@@ -20,7 +22,9 @@
     {% if page.components.info-cards.contact-us.email %}
       <li>
         <strong>Correo:</strong>
-        {{ page.components.info-cards.contact-us.email }}
+        <a class="btn-link text-white" href="mailto:{{ page.components.info-cards.contact-us.email }}">
+          {{ page.components.info-cards.contact-us.email }}
+        </a>
       </li>
     {% endif %}
   </ul>

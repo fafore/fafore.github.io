@@ -1,9 +1,13 @@
 <div class="col-sm-4">
-  {% include components/icons/icon.liquid icon="map-marker" %}
+  <a class="scroll btn-link text-white" href="#localizanos">
+    <div>
+      {% include components/icons/icon.liquid icon="map-marker" %}
       <h3>Localízanos</h3>
 
-  <p>
-    <div>{{ page.components.info-cards.location.street }},</div>
-    <div>{{ page.components.info-cards.location.city }}</div>
-  </p>
+      <p>
+        <div>{{ page.components.info-cards.location.street }},</div>
+        <div>{{ page.components.info-cards.location.city }}</div>
+      </p>
+    </div>
+  </a>
 </div>
