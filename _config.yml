@@ -7,14 +7,14 @@ url: "" # the name of your domain
 components:
   form: # Contact form
     api-token: # getsimpleform.com API token
-  navbar: [Inicio, Nosotros, Convenios, Patrocinadores, Testimonios, Galeria, Localizanos]
+  navbar: [ Inicio, Nosotros, Testimonios, Galeria, Patrocinadores, Convenios, Localizanos ]
   social-media:
     - { name: facebook, url: "//www.facebook.com/profile.php?id=100087547196288&mibextid=ZbWKwL" }
     - { name: instagram, url: "//instagram.com/fafore_ac?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" }
 
 # Testimonials
 testimonials:
-    testimonials_img: parallax.jpg
+  testimonials_img: parallax.jpg
 
 # Footer
 copyright: © 2023 FAFORE - Todos los derecho reservados
@@ -23,13 +23,13 @@ copyright: © 2023 FAFORE - Todos los derecho reservados
 markdown: kramdown
 
 exclude: [
-    package.json,
-    Gruntfile.js,
-    node_modules,
-    .sass-cache,
-    Gemfile,
-    Gemfile.lock,
-    .gitignore
+  package.json,
+  Gruntfile.js,
+  node_modules,
+  .sass-cache,
+  Gemfile,
+  Gemfile.lock,
+  .gitignore
 ]
 
 # Theme Settings

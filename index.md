@@ -40,51 +40,6 @@ components:
   </div>
 </div>
 
-<!-- Start Treatments -->
-<div id="convenios" class="treatments">
-    <div class="container-fluid">
-        <h2 class="section-title">Convenios</h2>
-
-        <div class="row">
-            {% for treatment in site.data.treatments %}
-                <div class="col-sm-6 col-md-4">
-                    <div class="icon-box">
-                        {% include components/icons/icon.liquid icon=treatment.icon color="danger" %}
-                        <h4>{{ treatment.title }}</h4>
-                        <p>{{ treatment.description }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-<!-- End Treatments -->
-
-<!-- Start Our team -->
-<div id="patrocinadores" class="team"> 
-    <h2 class="section-title">Nuestros patrocinadores</h2> 
-    <div id="team-carousel">
-    {% for member in site.data.team %}
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="{{ member.name | slugify | prepend: '/assets/components/carousels/' | append: '.jpg' | relative_url }}" alt="{{ member.name }}">
-                <h4>{{ member.name }}</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}">
-                    {% include components/icons/icon.liquid icon="envelope" %}
-                </span>
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}">
-                    {% include components/icons/icon.liquid icon="phone" %}
-                </span>
-            </div>
-        </div>
-    {% endfor %}
-    </div>
-</div>
-<!-- End Our team -->
-
-<!-- Start Testimonials -->
 <div id="testimonios" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
     <div class="overlay-container">
         <div class="overlay"></div>
@@ -106,9 +61,7 @@ components:
         </div>
     </div>
 </div>
-<!-- End Testimonials -->
 
-<!-- Start Gallery -->
 <div id="galeria" class="gallery">
         
     <h2 class="section-title">Galería</h2>
@@ -126,6 +79,46 @@ components:
         </a>
     {% endfor %}
 
+</div>
+
+<div id="patrocinadores" class="team"> 
+  <h2 class="section-title">Nuestros patrocinadores</h2>
+
+  <div id="team-carousel">
+    {% for member in site.data.team %}
+      <div class="expandable-box">
+        <div class="expandable-box-top">
+          <img src="{{ member.name | slugify | prepend: '/assets/components/carousels/' | append: '.jpg' | relative_url }}" alt="{{ member.name }}">
+          <h4>{{ member.name }}</h4>
+        </div>
+        <div class="expandable-box-bottom">
+          <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}">
+              {% include components/icons/icon.liquid icon="envelope" %}
+          </span>
+          <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}">
+              {% include components/icons/icon.liquid icon="phone" %}
+          </span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="convenios" class="treatments">
+  <div class="container-fluid">
+    <h2 class="section-title">Convenios</h2>
+    <div class="row">
+      {% for treatment in site.data.treatments %}
+        <div class="col-sm-6 col-md-4">
+          <div class="icon-box">
+            {% include components/icons/icon.liquid icon=treatment.icon color="danger" %}
+            <h4>{{ treatment.title }}</h4>
+            <p>{{ treatment.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 <div id="localizanos" style="height: 450px">
