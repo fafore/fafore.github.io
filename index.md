@@ -19,8 +19,8 @@ components:
       body: FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE.
       media-objects:
         - {icon: heart, body: "Amor"}
-        - {icon: medkit, body: "Empatia"}
-        - {icon: star, body: "Compromiso"}
+        - {icon: leaf, body: "Empatia"}
+        - {icon: trophy, body: "Compromiso"}
         - {icon: star, body: "Lealtad"}
 ---
 {% include components/hero/bootstrap.liquid 
