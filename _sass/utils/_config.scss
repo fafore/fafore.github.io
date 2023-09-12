@@ -101,3 +101,50 @@ $btn-border-radius-small: 0;
 $tooltip-max-width: 260px;
 $tooltip-color: #fff;
 $tooltip-bg: darken($colorPrimary, 2%);
+
+/* Spacing
+-------------------------------*/
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-xs, // screen-sm-min
+  md: $screen-sm, // screen-md-min
+  lg: $screen-md, // screen-lg-min
+);
+$spacer-x-0: 0rem;
+$spacer-y-0: 0rem;
+$spacer-x-1: .25rem;
+$spacer-y-1: .25rem;
+$spacer-x-2: .5rem;
+$spacer-y-2: .5rem;
+$spacer-x-3: 1rem;
+$spacer-y-3: 1rem;
+$spacer-x-4: 1.5rem;
+$spacer-y-4: 1.5rem;
+$spacer-x-5: 3rem;
+$spacer-y-5: 3rem;
+$spacers: (
+  0: (
+    x: $spacer-x-0,
+    y: $spacer-y-0
+  ),
+  1: (
+    x: $spacer-x-1,
+    y: $spacer-y-1
+  ),
+  2: (
+    x: $spacer-x-2,
+    y: $spacer-y-2
+  ),
+  3: (
+    x: $spacer-x-3,
+    y: $spacer-y-3
+  ),
+  4: (
+    x: $spacer-x-4,
+    y: $spacer-y-4
+  ),
+  5: (
+    x: $spacer-x-5,
+    y: $spacer-y-5
+  )
+);
