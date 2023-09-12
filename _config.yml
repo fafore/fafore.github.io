@@ -16,12 +16,6 @@ components:
 testimonials:
     testimonials_img: parallax.jpg
 
-# Map
-map:
-    zoom: 17
-    address: Ave. Deza y Ulloa 2910-19 Col. San Felipe 1, Chihuahua, Mexico, 31203
-    address_details: svg/min/logo.svg
-
 # Footer
 copyright: © 2023 FAFORE - Todos los derecho reservados
 

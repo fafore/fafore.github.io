@@ -127,8 +127,10 @@ components:
     {% endfor %}
 
 </div>
-<!-- End Gallery -->
 
-<!-- Start Map -->
-<div id="localizanos" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
-<!-- End Map -->
+<div id="localizanos" style="height: 450px">
+  {% include components/maps/google.liquid
+     height="450"
+     url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.9144635052332!2d-106.09519974909949!3d28.642364452199466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea4375b348b18b%3A0x156e120bfd807a84!2sFAFORE%20A.C.!5e0!3m2!1ses-419!2smx!4v1694552735812!5m2!1ses-419!2smx"
+  %}
+</div>
