@@ -16,9 +16,6 @@ components:
 testimonials:
   testimonials_img: parallax.jpg
 
-# Footer
-copyright: © 2023 FAFORE - Todos los derecho reservados
-
 # Build settings
 markdown: kramdown
 

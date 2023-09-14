@@ -1,5 +1,9 @@
 <small>
-  {% if site.copyright %}
-    {{ site.copyright }}
-  {% endif %}
+  ©
+  <span id="copyright-year"></span>
+  FAFORE - Todos los derechos reservados
 </small>
+
+<script>
+  document.querySelector('#copyright-year').innerHTML = new Date().getFullYear();
+</script>
