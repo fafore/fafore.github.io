@@ -13,6 +13,15 @@ components:
       street: "Ave. Deza y Ulloa #2910-19"
       city: Col. San Felipe 1, Chih, Chih, México.
   panels:
+    gallery:
+      - FAFORE AC
+      - Equipo FAFORE! 💪
+      - Día de la madre
+      - Cartas dirigidas a los menores
+      - CERESO
+      - Día de la mujer
+      - Universidad La Salle
+      - Grupo Cimarron
     media-object:
       title: Nosotros
       subtitle: Bienvenido a FAFORE AC
@@ -63,22 +72,7 @@ components:
 </div>
 
 <div id="galeria" class="gallery">
-        
-    <h2 class="section-title">Galería</h2>
-
-    {% for images in site.data.gallery %}
-        <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
-            </div>
-            <div class="expandable-box-bottom">
-                <span>
-                    {% include components/icons/icon.liquid icon="chain" %}
-                </span>
-            </div>
-        </a>
-    {% endfor %}
-
+  {% include components/panels/gallery.liquid %}
 </div>
 
 <div id="patrocinadores" class="team"> 
