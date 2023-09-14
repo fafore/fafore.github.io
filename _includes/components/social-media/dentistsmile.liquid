@@ -1,7 +1,7 @@
 <ul class="social">
   {% for social-media in site.components.social-media %}
     <li>
-      <a href="{{ social-media.url }}">
+      <a href="{{ social-media.url }}" target="_blank">
         {% include components/icons/icon.liquid icon=social-media.name %}
       </a>
     </li>
