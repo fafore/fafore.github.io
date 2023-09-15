@@ -12,10 +12,6 @@ components:
     - { name: facebook, url: "//www.facebook.com/profile.php?id=100087547196288&mibextid=ZbWKwL" }
     - { name: instagram, url: "//instagram.com/fafore_ac?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" }
 
-# Testimonials
-testimonials:
-  testimonials_img: parallax.jpg
-
 # Build settings
 markdown: kramdown
 

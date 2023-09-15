@@ -1,0 +1,25 @@
+<div id="{{ include.name }}" class="parallax" style="background-image: url('{{ '/assets/components/hero/background-xs.jpg' | relative_url }}')">
+  <div class="overlay-container">
+    <div class="overlay"></div>
+
+    <div class="container-fluid">
+      <div id="parallax-carousel">
+        {% for quote in page.components.parallax %}
+          <div class="parallax-item">
+
+            {% include components/icons/icon.liquid icon="quote-left" %}
+            <blockquote>
+              <p>{{ quote.quote }}</p>
+              <footer>
+                {{ quote.name }}
+                <small>{{ quote.title }}</small>
+              </footer>
+            </blockquote>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</div>

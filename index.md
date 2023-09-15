@@ -27,10 +27,20 @@ components:
       subtitle: Bienvenido a FAFORE AC
       body: FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE.
       media-objects:
-        - {icon: heart, body: "Amor"}
-        - {icon: leaf, body: "Empatia"}
-        - {icon: trophy, body: "Compromiso"}
-        - {icon: star, body: "Lealtad"}
+        - { icon: heart,  body: "Amor"       }
+        - { icon: leaf,   body: "Empatia"    }
+        - { icon: trophy, body: "Compromiso" }
+        - { icon: star,   body: "Lealtad"    }
+  parallax:
+    - name: Jeff Winger
+      title: Law Professor - Greendale
+      quote: I teach law at Greendale, so believe me, I don't know much about law.
+    - name: Jeff Winger
+      title: Law Professor - Greendale
+      quote: Let's do what people do. Let's get a house we can't afford and a dog that makes us angry.
+    - name: Jeff Winger
+      title: Law Professor - Greendale
+      quote: There already was a rating system in place, it was called 'Cool People Get More,' and it was working fine.
 ---
 {% include components/hero/bootstrap.liquid 
    title="FAFORE AC"
@@ -49,27 +59,9 @@ components:
   </div>
 </div>
 
-<div id="testimonios" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                        {% include components/icons/icon.liquid icon="quote-left" %}
-                        <blockquote>
-                            <p>{{ testimonial.description }}</p>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
+{% include components/parallax/dentistsmile.liquid 
+   name="testimonios"
+%}
 
 <div id="galeria" class="gallery">
   {% include components/panels/gallery.liquid %}
