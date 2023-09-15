@@ -10,7 +10,7 @@
   }
 
   .overlay-container {
-    @extend %space;
+    padding: $space*7 0;
     position: relative;
     width: 100%;
     height: 100%;
