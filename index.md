@@ -33,7 +33,7 @@ components:
       - Universidad La Salle
       - Grupo Cimarron
     icon-box:
-      convenios:
+      agreements:
         - icon: user-md
           title: Invisible braces
           description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
@@ -53,7 +53,6 @@ components:
           title: Sedation
           description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
     media-object:
-      title: Nosotros
       subtitle: Bienvenido a FAFORE AC
       body: FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE.
       media-objects:
@@ -83,10 +82,13 @@ components:
   {% include components/info-cards/location.liquid %}
 </div>
 
-<div id="nosotros" class="about">
-  <div class="container-fluid">
-    {% include components/panels/media-object.liquid %}
-  </div>
+<div id="nosotros">
+  {% include components/panels/section-title.liquid
+     class="panel-section-clean"
+     container="container-fluid"
+     title="Nosotros"
+     component="panels/media-object"
+  %}
 </div>
 
 {% include components/parallax/dentistsmile.liquid 
@@ -99,19 +101,21 @@ components:
 
 <div id="patrocinadores">
   {% include components/panels/section-title.liquid
+     class="panel-section-primary"
      title="Nuestros patrocinadores"
      component="carousels/expandable-images"
      collection="sponsors"
   %}
 </div>
 
-<div id="convenios" class="treatments">
-  <div class="container-fluid">
-    <h2 class="section-title">Convenios</h2>
-      {% include components/panels/icon-box.liquid
-         collection="convenios"
-      %}
-  </div>
+<div id="convenios">
+  {% include components/panels/section-title.liquid
+     class="panel-section-bg"
+     container="container-fluid"
+     title="Convenios"
+     component="panels/icon-box"
+     collection="agreements"
+  %}
 </div>
 
 <div id="localizanos" style="height: 450px">
