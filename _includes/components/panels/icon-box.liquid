@@ -1,0 +1,11 @@
+<div class="row">
+  {% for card in page.components.panels.icon-box[include.collection] %}
+    <div class="col-sm-6 col-md-4">
+      {% include components/info-cards/icon-box.liquid
+          icon=card.icon
+          title=card.title
+          description=card.description
+      %}
+    </div>
+  {% endfor %}
+</div>

@@ -32,6 +32,26 @@ components:
       - Día de la mujer
       - Universidad La Salle
       - Grupo Cimarron
+    icon-box:
+      convenios:
+        - icon: user-md
+          title: Invisible braces
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+        - icon: diamond
+          title: Cosmetic Dentistry
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+        - icon: flask
+          title: Stain removal
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        - icon: globe
+          title: Dentures
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+        - icon: ambulance
+          title: Emergency Calls
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+        - icon: bed
+          title: Sedation
+          description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
     media-object:
       title: Nosotros
       subtitle: Bienvenido a FAFORE AC
@@ -88,17 +108,9 @@ components:
 <div id="convenios" class="treatments">
   <div class="container-fluid">
     <h2 class="section-title">Convenios</h2>
-    <div class="row">
-      {% for treatment in site.data.treatments %}
-        <div class="col-sm-6 col-md-4">
-          <div class="icon-box">
-            {% include components/icons/icon.liquid icon=treatment.icon color="danger" %}
-            <h4>{{ treatment.title }}</h4>
-            <p>{{ treatment.description }}</p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+      {% include components/panels/icon-box.liquid
+         collection="convenios"
+      %}
   </div>
 </div>
 
