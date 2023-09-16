@@ -1,0 +1,9 @@
+<div id="expandable-images">
+  {% for card in page.components.carousels.expandable-images[include.collection] %}
+    {% include components/info-cards/expandable-image.liquid
+       name=card.name
+       email=card.email
+       phone=card.phone
+    %}
+  {% endfor %}
+</div>

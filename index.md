@@ -2,6 +2,16 @@
 layout: default
 
 components:
+  carousels:
+    expandable-images:
+      sponsors:
+        - { name: Britta Perry, email: email@gmail.com, phone: 9659 43 21 }
+        - { name: Troy Barnes,  email: email@gmail.com, phone: 9659 43 21 }
+        - { name: Annie,        email: email@gmail.com, phone: 9659 43 21 }
+        - { name: Jeff Winger,  email: email@gmail.com, phone: 9659 43 21 }
+        - { name: Britta Perry, email: email@gmail.com, phone: 9659 43 21 }
+        - { name: Troy Barnes,  email: email@gmail.com, phone: 9659 43 21 }
+        - { name: Annie,        email: email@gmail.com, phone: 9659 43 21 }
   info-cards:
     contact-us:
       phone: 614 289 8591
@@ -27,10 +37,10 @@ components:
       subtitle: Bienvenido a FAFORE AC
       body: FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE.
       media-objects:
-        - { icon: heart,  body: "Amor"       }
-        - { icon: leaf,   body: "Empatia"    }
-        - { icon: trophy, body: "Compromiso" }
-        - { icon: star,   body: "Lealtad"    }
+        - { icon: heart,  body: Amor       }
+        - { icon: leaf,   body: Empatia    }
+        - { icon: trophy, body: Compromiso }
+        - { icon: star,   body: Lealtad    }
   parallax:
     - name: Jeff Winger
       title: Law Professor - Greendale
@@ -67,27 +77,12 @@ components:
   {% include components/panels/gallery.liquid %}
 </div>
 
-<div id="patrocinadores" class="team"> 
-  <h2 class="section-title">Nuestros patrocinadores</h2>
-
-  <div id="team-carousel">
-    {% for member in site.data.team %}
-      <div class="expandable-box">
-        <div class="expandable-box-top">
-          <img src="{{ member.name | slugify | prepend: '/assets/components/carousels/' | append: '.jpg' | relative_url }}" alt="{{ member.name }}">
-          <h4>{{ member.name }}</h4>
-        </div>
-        <div class="expandable-box-bottom">
-          <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}">
-              {% include components/icons/icon.liquid icon="envelope" %}
-          </span>
-          <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}">
-              {% include components/icons/icon.liquid icon="phone" %}
-          </span>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+<div id="patrocinadores">
+  {% include components/panels/section-title.liquid
+     title="Nuestros patrocinadores"
+     component="carousels/expandable-images"
+     collection="sponsors"
+  %}
 </div>
 
 <div id="convenios" class="treatments">

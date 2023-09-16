@@ -1,0 +1,21 @@
+<div class="expandable-box">
+
+  <div class="expandable-box-top">
+    <img
+      src="{{ include.name | slugify | prepend: '/assets/components/info-cards/' | append: '.jpg' | relative_url }}"
+      alt="{{ include.name }}">
+    <h4>
+      {{ include.name }}
+    </h4>
+  </div>
+
+  <div class="expandable-box-bottom">
+    <span data-toggle="tooltip" data-placement="bottom" title="{{ include.email }}">
+      {% include components/icons/icon.liquid icon="envelope" %}
+    </span>
+    <span data-toggle="tooltip" data-placement="bottom" title="{{ include.phone }}">
+      {% include components/icons/icon.liquid icon="phone" %}
+    </span>
+  </div>
+
+</div>

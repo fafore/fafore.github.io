@@ -1,0 +1,9 @@
+<div class="panel-section-title">
+  <h2 class="section-title">
+    {{ include.title }}
+  </h2>
+
+  {% include {{ include.component | prepend: 'components/' | append: '.liquid' }}
+     collection=include.collection
+  %}
+</div>
