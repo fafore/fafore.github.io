@@ -5,6 +5,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
 
 components:
+  analytics:
+    google-analytics: # GA-ID
+    google-verification: # GV-ID
   form: # Contact form
     api-token: # getsimpleform.com API token
   navbar: [ Inicio, Nosotros, Testimonios, Galeria, Patrocinadores, Convenios, Localizanos ]
@@ -24,7 +27,3 @@ exclude: [
   Gemfile.lock,
   .gitignore
 ]
-
-# Theme Settings
-analytics: 
-google-verification:
