@@ -14,14 +14,15 @@ components:
         - { name: Annie,        email: email@gmail.com, phone: 9659 43 21 }
   panels:
     gallery:
-      - FAFORE AC
-      - Equipo FAFORE! 💪
-      - Día de la madre
-      - Cartas dirigidas a los menores
-      - CERESO
-      - Día de la mujer
-      - Universidad La Salle
-      - Grupo Cimarron
+      instagram:
+        - FAFORE AC
+        - Equipo FAFORE! 💪
+        - Día de la madre
+        - Cartas dirigidas a los menores
+        - CERESO
+        - Día de la mujer
+        - Universidad La Salle
+        - Grupo Cimarron
     icon-box:
       agreements:
         - icon: user-md
@@ -61,8 +62,8 @@ components:
       quote: There already was a rating system in place, it was called 'Cool People Get More,' and it was working fine.
 ---
 {% include components/hero/bootstrap.liquid 
-   title="FAFORE AC"
-   description="Ayuda a los hij@s de mujeres privadas de la libertad"
+    title="FAFORE AC"
+    description="Ayuda a los hij@s de mujeres privadas de la libertad"
 %}
 
 <div class="three-shade-col">
@@ -82,37 +83,42 @@ components:
 
 <div id="nosotros">
   {% include components/panels/section-title.liquid
-     class="panel-section-clean"
-     container="container-fluid"
-     title="Nosotros"
-     component="panels/media-object"
+      class="panel-section-clean"
+      container="container-fluid"
+      title="Nosotros"
+      component="panels/media-object"
   %}
 </div>
 
-{% include components/parallax/dentistsmile.liquid 
-   name="testimonios"
-%}
+<div id="testimonios">
+  {% include components/parallax/dentistsmile.liquid %}
+</div>
 
-<div id="galeria" class="gallery">
-  {% include components/panels/gallery.liquid %}
+<div id="galeria">
+  {% include components/panels/section-title.liquid
+      class="gallery"
+      title="Galería"
+      component="panels/gallery"
+      collection="instagram"
+  %}
 </div>
 
 <div id="patrocinadores">
   {% include components/panels/section-title.liquid
-     class="panel-section-primary"
-     title="Nuestros patrocinadores"
-     component="carousels/expandable-images"
-     collection="sponsors"
+      class="panel-section-primary"
+      title="Nuestros patrocinadores"
+      component="carousels/expandable-images"
+      collection="sponsors"
   %}
 </div>
 
 <div id="convenios">
   {% include components/panels/section-title.liquid
-     class="panel-section-bg"
-     container="container-fluid"
-     title="Convenios"
-     component="panels/icon-box"
-     collection="agreements"
+      class="panel-section-bg"
+      container="container-fluid"
+      title="Convenios"
+      component="panels/icon-box"
+      collection="agreements"
   %}
 </div>
 

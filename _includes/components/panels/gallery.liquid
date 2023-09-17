@@ -1,8 +1,4 @@
-<h2 class="section-title">
-  Galería
-</h2>
-
-{% for image in page.components.panels.gallery %}
+{% for image in page.components.panels.gallery[include.collection] %}
   <a href="{{ forloop.index | prepend: '/assets/components/panels/gallery-' | append: '.jpg' | relative_url }}" class="gallery-item expandable-box image-link">
     <div class="expandable-box-top">
       <img src="{{ forloop.index | prepend: '/assets/components/panels/gallery-' | append: '.jpg' | relative_url }}" alt="{{ image }}" title="{{ image }}">
