@@ -3,27 +3,27 @@
   <h3>Contacto</h3>
 
   <ul>
-    {% if page.components.info-cards.contact-us.phone %}
+    {% if include.phone %}
       <li>
         <strong>Teléfono:</strong>
-        <a class="btn-link text-white" href="tel:{{ page.components.info-cards.contact-us.phone }}">
-          {{ page.components.info-cards.contact-us.phone }}
+        <a class="btn-link text-white" href="tel:{{ include.phone }}">
+          {{ include.phone }}
         </a>
       </li>
     {% endif %}
 
-    {% if page.components.info-cards.contact-us.emergency %}
+    {% if include.emergency %}
       <li>
         <strong>Emergencia:</strong>
-        {{ page.components.info-cards.contact-us.emergency }}
+        {{ include.emergency }}
       </li>
     {% endif %}
 
-    {% if page.components.info-cards.contact-us.email %}
+    {% if include.email %}
       <li>
         <strong>Correo:</strong>
-        <a class="btn-link text-white" href="mailto:{{ page.components.info-cards.contact-us.email }}">
-          {{ page.components.info-cards.contact-us.email }}
+        <a class="btn-link text-white" href="mailto:{{ include.email }}">
+          {{ include.email }}
         </a>
       </li>
     {% endif %}

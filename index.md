@@ -12,16 +12,6 @@ components:
         - { name: Britta Perry, email: email@gmail.com, phone: 9659 43 21 }
         - { name: Troy Barnes,  email: email@gmail.com, phone: 9659 43 21 }
         - { name: Annie,        email: email@gmail.com, phone: 9659 43 21 }
-  info-cards:
-    contact-us:
-      phone: 614 289 8591
-      email: faforeac@gmail.com
-    working-hours:
-      workdays: 9:00 – 18:00
-      weekends: 9:00 – 15:00
-    location:
-      street: "Ave. Deza y Ulloa #2910-19"
-      city: Col. San Felipe 1, Chih, Chih, México.
   panels:
     gallery:
       - FAFORE AC
@@ -54,7 +44,6 @@ components:
           description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
     media-object:
       subtitle: Bienvenido a FAFORE AC
-      body: FAFORE, es una asociación civil, creada con el propósito de brindar las herramientas necesarias,  para que las niñas, niños y adolescentes, hij@s de mujeres privadas de la libertad, puedan enfrentar las adversidades que se les presentan día a día, obstaculizando su desarrollo, al no contar con uno de los pilares fundamentales en su  vida, su MADRE.
       media-objects:
         - { icon: heart,  body: Amor       }
         - { icon: leaf,   body: Empatia    }
@@ -77,9 +66,18 @@ components:
 %}
 
 <div class="three-shade-col">
-  {% include components/info-cards/contact-us.liquid %}
-  {% include components/info-cards/working-hours.liquid %}
-  {% include components/info-cards/location.liquid %}
+  {% include components/info-cards/contact-us.liquid
+      phone="614 289 8591"
+      email="faforeac@gmail.com"
+  %}
+  {% include components/info-cards/working-hours.liquid
+      workdays="9:00 – 18:00"
+      weekends="9:00 – 15:00"
+  %}
+  {% include components/info-cards/location.liquid
+      street="Ave. Deza y Ulloa #2910-19"
+      city="Col. San Felipe 1, Chih, Chih, México."
+  %}
 </div>
 
 <div id="nosotros">
